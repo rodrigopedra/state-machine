@@ -1,0 +1,49 @@
+{
+  "name": "rodrigopedra/state-machine",
+  "description": "A Finite State Machine implementation",
+  "keywords": [
+    "state machine",
+    "finite state machine",
+    "laravel"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Rodrigo Pedra Brum",
+      "email": "rodrigo.pedra@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.4",
+    "ext-json": "*",
+    "illuminate/collections": "^8.0",
+    "illuminate/contracts": "^8.0",
+    "psr/event-dispatcher": "^1.0"
+  },
+  "require-dev": {
+    "illuminate/auth": "^8.0",
+    "illuminate/console": "^8.0",
+    "illuminate/container": "^8.0",
+    "illuminate/events": "^8.0",
+    "illuminate/filesystem": "^8.0",
+    "illuminate/support": "^8.0",
+    "symfony/console": "^5.2",
+    "symfony/process": "^5.2"
+  },
+  "autoload": {
+    "psr-4": {
+      "RodrigoPedra\\StateMachine\\": "src/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "RodrigoPedra\\StateMachine\\Laravel\\StateMachineServiceProvider"
+      ]
+    }
+  },
+  "suggest": {
+    "symfony/console": "Required to use SymfonyConsoleTableSerializer.",
+    "symfony/process": "Required to use ImageExporter."
+  }
+}
